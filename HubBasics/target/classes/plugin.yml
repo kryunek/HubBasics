@@ -1,0 +1,31 @@
+name: HubBasics
+version: '1.1'
+main: com.valkyrie.hubbasics.HubBasics
+api-version: 1.18
+authors: [ kryunek, lowg0d_ ]
+description: A plugin for a hub
+commands:
+  setspawn:
+    description: Set's the spawn
+  spawn:
+    description: Teleports you to the set spawn.
+  website:
+    description: Sends the server's website
+  store:
+    description: Sends the server's store
+  discord:
+    description: Sends the server's discord
+  ping:
+    description: Tells you your ping
+  clearchat:
+    description: Clear the chat
+  mutechat:
+    description: Mute the chat
+  slowchat:
+    description: Slow the chat
+  fly :
+    description: Slow the chat
+
+
+
+

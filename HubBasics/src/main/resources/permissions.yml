@@ -1,0 +1,33 @@
+#################################################
+#            HubBasics Permissions              #
+#     Discord: https://discord.gg/2gsj3A6vQd    #
+#################################################
+
+
+CHAT:
+  clear-chat: 'hubbasics.clearchat'
+  mute-chat: 'hubbasics.mutechat'
+  mute-chat-bypass: 'hubbasics.mutechat.bypass'
+  slow-chat: 'hubbasics.slowchat'
+  slow-chat-bypass: 'hubbasics.slowchat.bypass'
+
+ESSENTIALS:
+  ping: 'hubbasics.ping'
+  fly: 'hubbasics.fly'
+
+MEDIA:
+  discord: 'hubbasics.discord'
+  store: 'hubbasics.store'
+  website: 'hubbasics.website'
+
+SPAWN:
+  setspawn: 'hubbasics.setspawn'
+  spawn: 'hubbasics.spawn'
+
+HUB:
+  place: 'hubbasics.place'
+  break: 'hubbasics.break'
+  drop: 'hubbasics.drop'
+  bucketempty: 'hubbasics.bucketmpty'
+  bucketfill: 'hubbasics.bucketfill'
+  fish: 'hubbasics.fish'

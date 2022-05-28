@@ -1,0 +1,180 @@
+#################################################
+#            HubBasics Configuration            #
+#     Discord: https://discord.gg/2gsj3A6vQd    #
+#################################################
+
+#################################################
+#                     ITEMS                     #
+#################################################
+ITEM:
+  SERVER_SELECTOR:
+    MATERIAL: WATCH
+    AMOUNT: 1
+    VALUE: 0
+    SLOT: 0
+    NAME: "&6Server Selector"
+    SOUND: "CLICK"
+    VOLUME: 1.0
+    PITCH: 1.0
+
+  ENDER_BUTT:
+    MATERIAL: ENDER_PEARL
+    AMOUNT: 1
+    VALUE: 0
+    SLOT: 8
+    NAME: "&bEnderButt"
+    SOUND: "ENDERMAN_TELEPORT"
+    VOLUME: 1.0
+    PITCH: 1.0
+
+  HIDEPLAYERS:
+    MATERIAL: INK_SACK
+    AMOUNT: 1
+    VALUE: 10
+    SLOT: 7
+    NAME: "&aHide Players"
+    SOUND: "NOTE_PLING"
+    VOLUME: 1.0
+    PITCH: 1.0
+  ##Thanks to Pelans :)
+  SHOWPLAYERS:
+    MATERIAL: INK_SACK
+    AMOUNT: 1
+    VALUE: 8
+    NAME: "&aShow Players"
+    SOUND: "NOTE_PLING"
+    VOLUME: 1.0
+    PITCH: 1.0
+
+
+#################################################
+#                   FEATURES                    #
+#################################################
+LAUNCH_PAD:
+  ENABLE: true
+  MATERIAL: GOLD_PLATE
+  SOUND: EXPLODE
+  VOLUME: 1.0
+  PITCH: 1.0
+
+ALWAYS_SUNNY:
+  ENABLE: true
+
+PLAYERJOIN:
+  ENABLE: true
+  MESSAGE: '&d{player} &fhas joined.'
+  PERMISSION: 'hubbasics.joinmessage'
+  ENABLE-SOUND: true
+  PERMISSION-SOUND: 'hubbasics.joinsound'
+  SOUND: 'CAT_MEOW'
+  VOLUME: 1.0
+  PITCH: 1.0
+
+FLYJOIN:
+  ENABLE: true
+  PERMISSION: 'hubbasics.joinfly'
+
+PLAYERQUIT:
+  ENABLE: true
+  MESSAGE: '&d{player} &fhas leaved.'
+  PERMISSION: 'hubbasics.quitmessage'
+
+DOUBLEJUMP:
+  ENABLE: true
+  SOUND: 'EXPLODE'
+  VOLUME: 1.0
+  PITCH: 10.0
+
+SPAWN:
+  SEND:
+    SOUND: "PORTAL"
+    VOLUME: 1.0
+    PITCH: 1.0
+  VOID:
+    ENABLE: true
+#################################################
+#                    EVENTS                     #
+#################################################
+DAMAGE: true
+FOOD: true
+WEATHER: true
+ENTITY: true
+CLICK: true
+PICKUP: true
+DROP: true
+PLACE: true
+BREAK: true
+BUCKETEMPTY: true
+BUCKETFILL: true
+FISH: true
+EXPLODE: true
+
+#################################################
+#                    ARMORS                     #
+#################################################
+ARMORS:
+  1:
+    MATERIAL:
+      helmet: LEATHER_HELMET
+      chestplate: LEATHER_CHESTPLATE
+      leggings: LEATHER_LEGGINGS
+      boots: LEATHER_BOOTS
+      color: RED
+    Glow: true
+    Permission: 'hubbasics.owner.armor'
+    Name: '&4&oOwner Armor'
+
+
+#################################################
+#        WELCOME MESSAGE (PAPI SUPPORTED)       #
+#################################################
+WELCOME_MESSAGE:
+  - "&7&m---------------------------------------"
+  - ""
+  - "&fWelcome  the &d&lOrbit!"
+  - ""
+  - "&7&l%bullet_point% &dStore: &fstore.orbit.com"
+  - "&7&l%bullet_point% &dDiscord: &fdiscord.gg/orbit"
+  - "&7&l%bullet_point% &dTwitter: &ftwitter.com/orbit"
+  - ""
+  - "&7&m---------------------------------------"
+
+#################################################
+#         MENU (PAPI SUPPORTED)                 #
+#################################################
+SERVER_SELECTOR_FILLER:
+  MATERIAL: STAINED_GLASS_PANE
+  NAME: " "
+  AMOUNT: 1
+  VALUE: 15
+
+SERVER_SELECTOR:
+  SIZE: 27
+  NAME: "&8Servers"
+  SERVERS:
+    1:
+      SERVER: server
+      MATERIAL: DIAMOND
+      SLOT: 13
+      NAME: "&6&lServer"
+      LORE:
+        - ""
+        - "&7&l%bullet_point% &a&lServer"
+        - ""
+        - "&7%right_arrow% &fClick to join &7%left_arrow%"
+
+#################################################
+#         SCOREBOARD (PAPI SUPPORTED)           #
+#################################################
+SCOREBOARD:
+  TITLE: "&5&lOrbit &7&oHub"
+  LINES:
+    - "&7&m-------------------"
+    - "&dOnline: &f{online}"
+    - ""
+    - "&dPing:"
+    - "&f{ping}"
+    - ""
+    - "&7&ostore.orbit.com"
+    - "&7&m-------------------"
+

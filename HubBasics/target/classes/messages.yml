@@ -1,0 +1,44 @@
+#################################################
+#            HubBasics Messages                 #
+#         Discord: discord.me/valkyriedev       #
+#################################################
+
+
+no-permission: '&cYou do not have permission to use this command.'
+no-console: '&cThis command cannot be executed from console'
+
+mute-chat:
+  mute:
+    broadcast: '&cThe chat has been muted by {player}.'
+    chat-fail: '&cThe chat is currently muted.'
+  unmute:
+    broadcast: '&cThe chat has been unmuted by {player}.'
+
+slow-chat:
+  enable:
+    broadcast: '&c{player} slowed chat by {seconds} seconds.'
+    chat-fail: '&cChat is currently slowed. Please wait {seconds} seconds before chatting again.'
+  disable:
+    broadcast: '&c{player} disabled slow chat.'
+
+clear-chat:
+  broadcast: '&cChat has been cleared by {player}.'
+
+ping:
+  ping: '&cYour Ping is: {ping}.'
+
+fly:
+  fly-enabled: '&aFly Enabled'
+  fly-disabled: '&cFly Disabled'
+
+media-links:
+  discord: "&7&l%bullet_point% &dDiscord: &fdiscord.gg/orbit"
+  store: "&7&l%bullet_point% &dStore: &fstore.orbit.com"
+  website: "&7&l%bullet_point% &dWebsite: &fwww.orbit.com"
+
+spawn:
+  no-spawn: '&cSpawn is not set.'
+  message: '&aSending you to spawn.'
+  spawn-added: '&aSpawn location has been set.'
+
+
