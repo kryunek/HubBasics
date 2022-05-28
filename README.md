@@ -1,5 +1,5 @@
 # HubBasics 🔮
-## **Items 🏹
+## **Items** 🏹
 > * Enderbutt
 > * ServerSelector *(BungeeCord)*
 > * HidePlayers **(Coming soon...)**
