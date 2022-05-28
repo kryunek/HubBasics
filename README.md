@@ -15,14 +15,14 @@
 > * Player welcome message
 > * FFA  **(Coming soon...)**
 
-## **Commands 👾
+## **Commands** 👾
 > * MuteChat, ClearChat and SlowChat
 > * Ping
 > * Fly
 > * Discord, Store and Website
 > * Setspawn and Spawn
 
-## **Scoreboard 📊
+## **Scoreboard** 📊
 > * Online players
 > * Ping
 
