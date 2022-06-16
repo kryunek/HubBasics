@@ -18,6 +18,7 @@ import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryCreativeEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.event.weather.WeatherChangeEvent;
 import org.bukkit.inventory.ItemStack;
@@ -121,13 +122,17 @@ public class PlayerListener implements Listener {
 
     @EventHandler
     public void onClick(InventoryClickEvent event) {
-        if(HubBasics.get().getConfig().getBoolean("CLICK"))
-            event.setCancelled(true);
+        if(!event.getWhoClicked().getGameMode().equals(GameMode.SURVIVAL) || !event.getWhoClicked().getGameMode().equals(GameMode.CREATIVE))
+        event.setCancelled(true);
     }
-
+    @EventHandler
+    public void onChangeWorld(PlayerChangedWorldEvent event) {
+    }
     @EventHandler
     public void onPickup(PlayerPickupItemEvent event) {
+        Player player = event.getPlayer();
         if(HubBasics.get().getConfig().getBoolean("PICKUP"))
+            if(!player.hasPermission(HubBasics.get().getPermissionsYml().getString("HUB.pickup")) || !event.getPlayer().getGameMode().equals(GameMode.CREATIVE))
             event.setCancelled(true);
     }
 

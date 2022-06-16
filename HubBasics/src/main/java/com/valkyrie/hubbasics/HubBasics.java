@@ -1,6 +1,9 @@
 package com.valkyrie.hubbasics;
 
 
+import com.valkyrie.hubbasics.captcha.listener.CaptchaListener;
+import com.valkyrie.hubbasics.captcha.listener.JoinListener;
+import com.valkyrie.hubbasics.captcha.menu.CaptchaMenu;
 import com.valkyrie.hubbasics.commands.chat.ClearChatCommand;
 import com.valkyrie.hubbasics.commands.chat.MuteChatCommand;
 import com.valkyrie.hubbasics.commands.chat.SlowChatCommand;
@@ -18,7 +21,6 @@ import com.valkyrie.hubbasics.hub.features.JoinFly;
 import com.valkyrie.hubbasics.hub.features.LaunchPad;
 import com.valkyrie.hubbasics.hub.items.EnderButt;
 import com.valkyrie.hubbasics.hub.items.ServerSelector;
-import com.valkyrie.hubbasics.hub.items.TogglePlayers;
 import com.valkyrie.hubbasics.hub.listeners.Chat;
 import com.valkyrie.hubbasics.hub.listeners.SlowChat;
 import com.valkyrie.hubbasics.scoreboard.Assemble;
@@ -33,16 +35,19 @@ import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @Getter
 public class HubBasics extends JavaPlugin {
 
+    private static final List<Player> playerArrayList = new ArrayList<>();
     public ArrayList<Player> hideplayers = new ArrayList<>();
     private File messagesYmlFile;
     private FileConfiguration messagesYml;
@@ -67,6 +72,9 @@ public class HubBasics extends JavaPlugin {
         createPermissionsYml();
         playerCountThread = new PlayerCountThread();
         playerCountThread.start();
+        PluginManager pluginManager = getServer().getPluginManager();
+        pluginManager.registerEvents(new CaptchaListener(this), this);
+        pluginManager.registerEvents(new JoinListener(), this);
 
 
         Assemble assemble = new Assemble(this, new ScoreboardAdapter());
@@ -149,6 +157,9 @@ public class HubBasics extends JavaPlugin {
         } catch (IOException | InvalidConfigurationException e) {
             e.printStackTrace();
         }
+    }
+    public static List<Player> getPlayerArrayList(){
+        return playerArrayList;
     }
 }
 

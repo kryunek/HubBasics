@@ -90,7 +90,7 @@ public class Armor {
 
         for (Map.Entry<String, Object> entry : config.getConfigurationSection("ARMORS.").getValues(false).entrySet()) {
             String path = "ARMORS." + entry.getKey(); // can be ARMORS.1, ARMORS.2, etc
-            String armorPermission = config.getString(path + ".Permission");
+            String armorPermission = config.getString(path + ".PERMISSION");
 
             System.out.println(player.hasPermission(armorPermission) + " ?");
 
@@ -98,16 +98,16 @@ public class Armor {
                 continue;
 
             /*Get Materials*/
-            String helmetMaterial = config.getString(path + ".MATERIAL.helmet");
-            String chestMaterial = config.getString(path + ".MATERIAL.chestplate");
-            String leggingsMaterial = config.getString(path + ".MATERIAL.leggings");
-            String bootsMaterial = config.getString(path + ".MATERIAL.boots");
-            String name = config.getString(path + ".Name");
+            String helmetMaterial = config.getString(path + ".MATERIAL.HELMET");
+            String chestMaterial = config.getString(path + ".MATERIAL.CHESTPLATE");
+            String leggingsMaterial = config.getString(path + ".MATERIAL.LEGGINGS");
+            String bootsMaterial = config.getString(path + ".MATERIAL.BOOTS");
+            String name = config.getString(path + ".NAME");
 
-            Color color = getColor(config.getString(path + ".MATERIAL.color"));
+            Color color = getColor(config.getString(path + ".MATERIAL.COLOR"));
 
 
-            boolean glowEnabled = config.getBoolean(path + ".Glow");
+            boolean glowEnabled = config.getBoolean(path + ".GLOW");
 
             generateNewArmor(player, helmetMaterial, chestMaterial, leggingsMaterial, bootsMaterial, armorPermission, name, (Color) color, glowEnabled);
         }

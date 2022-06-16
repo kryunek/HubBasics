@@ -27,6 +27,7 @@ SPAWN:
 HUB:
   place: 'hubbasics.place'
   break: 'hubbasics.break'
+  pickup: 'hubbasics.pickup'
   drop: 'hubbasics.drop'
   bucketempty: 'hubbasics.bucketmpty'
   bucketfill: 'hubbasics.bucketfill'

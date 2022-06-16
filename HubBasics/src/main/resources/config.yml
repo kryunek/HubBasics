@@ -27,29 +27,31 @@ ITEM:
     VOLUME: 1.0
     PITCH: 1.0
 
-  HIDEPLAYERS:
-    MATERIAL: INK_SACK
-    AMOUNT: 1
-    VALUE: 10
-    SLOT: 7
-    NAME: "&aHide Players"
-    SOUND: "NOTE_PLING"
-    VOLUME: 1.0
-    PITCH: 1.0
-  ##Thanks to Pelans :)
-  SHOWPLAYERS:
-    MATERIAL: INK_SACK
-    AMOUNT: 1
-    VALUE: 8
-    NAME: "&aShow Players"
-    SOUND: "NOTE_PLING"
-    VOLUME: 1.0
-    PITCH: 1.0
-
 
 #################################################
 #                   FEATURES                    #
 #################################################
+CAPTCHA:
+  ENABLED: true
+  PASSED: "&dYou have passed the captcha!"
+  FAILED: "&cYou have failed the captcha!"
+  BYPASS: true
+  BYPASS_PERMISSION: 'hubbasics.captchabypass'
+  MENU:
+    SIZE: 9
+    NAME: "&8Captcha test"
+    FAIL_MATERIAL: REDSTONE_BLOCK
+    FAIL_NAME: "&cNO"
+    FAIL_AMOUNT: 1
+    FAIL_VALUE: 0
+    PASS_MATERIAL: EMERALD_BLOCK
+    PASS_NAME: "&AYES"
+    PASS_AMOUNT: 1
+    PASS_VALUE: 0
+    SOUND: "VILLAGER_YES"
+    VOLUME: 100.0
+    PITCH: 100.0
+
 LAUNCH_PAD:
   ENABLE: true
   MATERIAL: GOLD_PLATE
@@ -99,7 +101,6 @@ DAMAGE: true
 FOOD: true
 WEATHER: true
 ENTITY: true
-CLICK: true
 PICKUP: true
 DROP: true
 PLACE: true
@@ -115,14 +116,14 @@ EXPLODE: true
 ARMORS:
   1:
     MATERIAL:
-      helmet: LEATHER_HELMET
-      chestplate: LEATHER_CHESTPLATE
-      leggings: LEATHER_LEGGINGS
-      boots: LEATHER_BOOTS
-      color: RED
-    Glow: true
-    Permission: 'hubbasics.owner.armor'
-    Name: '&4&oOwner Armor'
+      HELMET: LEATHER_HELMET
+      CHESTPLATE: LEATHER_CHESTPLATE
+      LEGGINGS: LEATHER_LEGGINGS
+      BOOTS: LEATHER_BOOTS
+      COLOR: RED
+    GLOW: true
+    PERMISSION: 'hubbasics.owner.armor'
+    NAME: '&4&oOwner Armor'
 
 
 #################################################

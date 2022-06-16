@@ -34,7 +34,6 @@ public class ItemBuilder {
         return this;
     }
 
-
     public ItemBuilder setLore(List<String> lore) {
         ItemMeta itemMeta = itemStack.getItemMeta();
         itemMeta.setLore(lore);

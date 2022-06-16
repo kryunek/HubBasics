@@ -34,6 +34,7 @@ public class SpawnCommand implements CommandExecutor {
 
         } else {
             Bukkit.getConsoleSender().sendMessage(CC.translate(HubBasics.get().getMessagesYml().getString("spawn.no-spawn")));
+            return true;
         }
 
         player.teleport(LocationUtil.parseToLocation(HubBasics.get().getConfig().getString("SPAWN.LOCATION")));
