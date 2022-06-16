@@ -13,7 +13,7 @@
 > * Void tp to spawn
 > * Player join message, leave message, sound on join 
 > * Player welcome message
-> * FFA  **(Coming soon...)**
+> * Captcha
 
 ## **Commands** 👾
 > * MuteChat, ClearChat and SlowChat
@@ -27,6 +27,6 @@
 > * Ping
 
 # Fully Customizable 📖
-> * [config.yml](https://pastebin.com/g6CNDSaX)
-> * [messages.yml](https://pastebin.com/syf3H1Pc)
+> * [config.yml](https://pastebin.com/SppTztdL)
+> * [messages.yml](https://pastebin.com/US2V3Lmb)
 > * [permissions.yml](https://pastebin.com/syf3H1Pc)
